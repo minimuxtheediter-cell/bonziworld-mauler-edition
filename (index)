@@ -22,12 +22,9 @@
 	<meta property="og:title" content="BonziWORLD">
 	<meta property="og:description" content="The gorilla-based chat app.">
 
-	
-	<script defer src="./espeak.js"></script>
 	<script defer src="./lib/jquery.min.js"></script>
 	<script defer src="./lib/seedrandom.min.js"></script>
 	<script defer src="./lib/socket.io-1.4.5.js"></script>
-	<!-- <script defer src="./lib/speakjs/speakClient.js"></script> -->
 	<script defer src="./lib/jquery.contextMenu.min.js"></script>
 
 	<script defer src="./bonziData.js"></script>
@@ -37,6 +34,7 @@
 	<div id="preload" hidden>
 		<img src="./img/desktop/window_header.png">
 		<img src="./img/desktop/window_border.png">
+		<img src="./img/desktop/start_menu.png">
 		<img src="./img/desktop/close.png">
 		<img src="./img/misc/explosion.png">
 		<img src="./img/bonzi/purple.webp">
@@ -49,6 +47,7 @@
 		<img src="./img/bonzi/white.webp">
 		<img src="./img/bonzi/green.webp">
 		<img src="./img/bonzi/blue.webp">
+		<img src="./img/bonzi/orange.webp">
 		<audio src="./explosion.mp3"></audio>
 	</div>
 	<div id="content">
@@ -63,7 +62,7 @@
 		<div id="talkcard" hidden></div>
 		<div id="chat_bar">
 			<div id="chat_send">send</div>
-			<div id="start_button" hidden>+</div>
+			<div id="start_button">+</div>
 			<input id="chat_message" type="text" placeholder="Enter a message">
 			<div id="chat_tray">
 				<div id="btn_tile" class="tray_btn"></div>
@@ -84,7 +83,7 @@
 				<div id="login_error" hidden></div>
 			</div>
 			<div id="login_load">loading</div>
-			<div id="login_version">Version 1.4.13</div>
+			<div id="login_version">Version 0.1</div>
 		</div>
 
 		<div id="page_error" class="page" hidden>
@@ -117,7 +116,7 @@
 
 		<div id="start_menu" hidden>
 			<div id="start_menu_pfp"></div>
-			<div id="start_menu_name">Anonymous</div>
+			<input id="start_menu_name" autocorrect="off" maxlength="25" value="Anonymous">
 			<div id="start_menu_body">
 				<div id="settings_button" class="start_menu_item">
 					<img class="start_menu_item_icon" src="/img/desktop/cp.webp">
@@ -126,7 +125,7 @@
 						<div class="start_menu_item_description">Configure your settings.</div>
 					</div>
 				</div>
-				<div id="image_button" class="start_menu_item">
+				<div id="image_button" class="start_menu_item" hidden>
 					<img class="start_menu_item_icon" src="/img/desktop/if.png">
 					<div class="start_menu_item_details">
 						<div class="start_menu_item_name">Upload an Image</div>
@@ -164,6 +163,10 @@
 				<b>Why? </b><span id="kick_reason"></span><br>
 			</div>
 		</div>
+		<div id="tooltip" style="display:none"></div>
 	</div>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b45a9507ed341ad',t:'MTc2NjgwNTQwOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cd3ddff4d22e56c',t:'MTc3MDk4MDg5OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+VM19:1 Uncaught SyntaxError: Unexpected token '<'
+﻿
+
