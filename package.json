@@ -1,0 +1,20 @@
+{
+  "name": "bonziworld-mauler-edition",
+  "version": "1.0.0",
+  "description": "A new and biggest bw server ever made by Mauler",
+  "homepage": "https://github.com/minimuxtheediter-cell/bonziworld-mauler-edition#readme",
+  "bugs": {
+    "url": "https://github.com/minimuxtheediter-cell/bonziworld-mauler-edition/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minimuxtheediter-cell/bonziworld-mauler-edition.git"
+  },
+  "license": "ISC",
+  "author": "Mauler",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  }
+}
